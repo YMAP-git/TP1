@@ -1,5 +1,5 @@
 #include <iostream>
-#include "livre.h"
+#include "lecteur.h"
 using namespace std;
 
 
@@ -10,6 +10,9 @@ int main(){
     date1.printDate();
     Livre livre1("1984", "George Orwell", "Dystopian", "English", date1, 1234567890, 5);
     livre1.afficherInfo();
+    cout<< "SAISI DES POTENTIELS LECTEURS" << endl;
+    Lecteur lecteur1(1, "Doe", "John", Date(15, 6, 1990));
+    lecteur1.afficherInfo();
 
 
 

@@ -3,7 +3,7 @@
 class Livre{
 public:
     Livre();
-    Livre(const std::string& titre, const std::string& auteur,const std::string& genre ,const std::string& langue, const Date& datePublication, long int isbn, int nbExemplaires);
+    Livre(const std::string& titre, const std::string& auteur,const std::string& genre ,const std::string& langue, const Date& datePublication,int isbn, int nbExemplaires);
     int getIsbn() const;
     int getNbExemplaires() const;
     void afficherInfo() const;
