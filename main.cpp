@@ -1,17 +1,17 @@
 #include <iostream>
 #include "lecteur.h"
+#include "livre.h"
 using namespace std;
-
-
 
 int main(){
 
-    Date date1(29, 2, 2020); // Valid date (leap year)
-    date1.printDate();
-    Livre livre1("1984", "George Orwell", "Dystopian", "English", date1, 1234567890, 5);
+    Auteur auteur1(1, "Orwell", "George", Date(25, 6, 1903));
+    auteur1.afficherInfo();
+    cout <<"/n/n";
+    Livre livre1("1984", auteur1, "Dystopian", "English", Date(15,9,2003), 1234567890, 5);
     livre1.afficherInfo();
     cout<< "SAISI DES POTENTIELS LECTEURS" << endl;
-    Lecteur lecteur1(1, "Doe", "John", Date(15, 6, 1990));
+    Lecteur lecteur1(1, "Doe", "John");
     lecteur1.afficherInfo();
 
 
